@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="flex flex-wrap justify-center w-full space-y-4 relative">
+      <canvas id="background" class="canvas"></canvas>
+      <canvas id="firework" class="canvas"></canvas>
+      <h1 class="w-full text-center text-4xl font-semibold pb-6">The Hangman</h1>
+      <canvas id="hangman" class="text-center" width="200" height="250"></canvas>
+      <div id="chosen-word-container" class="w-full flex justify-center"></div>
+      <div id="game-outcome" class="w-full flex flex-col items-center justify-center font-semibold text-3xl"></div>
+      <div
+        id="letter-container"
+        class="flex flex-wrap overflow-hidden justify-center items-center"
+      ></div>
+    </div>
+    <script src="hangman.js" defer></script>
+    <script src="background.js"></script>
+    <!-- <script src="firework.js"></script> -->
+  </body>
+</html>

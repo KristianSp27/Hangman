@@ -2,3 +2,24 @@
     cursor: pointer;
     position: absolute;
 }
+
+
+
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url("https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzU1MTIxNzc&ixlib=rb-4.0.3&q=80");
+  background-size: cover;
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+    margin: auto;
+    border-radius: 50%;
+    transform: translateY(30vh);
+    box-shadow: custome-box-shadow(150);
+    background: #e7b722;
+    animation: firework 2s ease-in-out infinite;
+  }
+}

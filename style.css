@@ -3,7 +3,11 @@
     position: absolute;
 }
 
-
+h1 {
+    color: #fff;
+    font-weight: bold;
+    top: 5cm;
+}
 
 body {
   height: 100vh;

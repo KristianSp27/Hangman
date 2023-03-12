@@ -70,7 +70,6 @@ function checkIfGameIsOver() {
   if (word === selectedWord) {
     endGame("Congratulations, You won!");
     winAudio.play();
-
   } else if (step === draws.length) {
     endGame("You lost! The word was: " + selectedWord);
     lossAudio.play();
